@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Typing Trainer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="game">
+
+    <header id="hud">
+
+        <div id="timer">
+            00.000
+        </div>
+
+        <div id="mistakes">
+            ミス <span id="missCount">0</span>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="letter">
+            A
+        </div>
+
+        <div id="wrong"></div>
+
+        <div id="hands">
+
+            <img
+                id="handsImage"
+                src="images/hands.png"
+                alt="Hands">
+
+            <div id="fingerHighlight"></div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<div id="result" hidden>
+
+    <h1>終了！</h1>
+
+    <div class="resultItem">
+
+        <span>タイム</span>
+
+        <strong id="resultTime">
+            00.000
+        </strong>
+
+    </div>
+
+    <div class="resultItem">
+
+        <span>ミス</span>
+
+        <strong id="resultMiss">
+            0
+        </strong>
+
+    </div>
+
+    <p>
+
+        Enterキーでもう一度
+
+    </p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
