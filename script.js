@@ -123,10 +123,12 @@ function resetGame(){
 
     letter.textContent = "A";
 
-    moveFinger("A");
-
     game.hidden = false;
     result.hidden = true;
+
+    requestAnimationFrame(() => {
+        moveFinger("A");
+    });
 
 }
 
@@ -290,6 +292,3 @@ document.addEventListener("keydown", (e) => {
     moveFinger(letters[index]);
 
 });
-
-
-//test
