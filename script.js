@@ -290,3 +290,6 @@ document.addEventListener("keydown", (e) => {
     moveFinger(letters[index]);
 
 });
+
+
+//test
